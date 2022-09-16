@@ -12,9 +12,11 @@
 		E25327AC28CCCE0A00FE579D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327AB28CCCE0A00FE579D /* FeedViewController.swift */; };
 		E25327B128CCCE0C00FE579D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25327B028CCCE0C00FE579D /* Assets.xcassets */; };
 		E25327B428CCCE0C00FE579D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25327B228CCCE0C00FE579D /* LaunchScreen.storyboard */; };
-		E25327BC28CCD3B900FE579D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BB28CCD3B900FE579D /* PostViewController.swift */; };
+		E25327BC28CCD3B900FE579D /* Extension + PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BB28CCD3B900FE579D /* Extension + PostViewController.swift */; };
 		E25327BE28CCD95500FE579D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BD28CCD95500FE579D /* InfoViewController.swift */; };
 		E25327C028CCDD1600FE579D /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BF28CCDD1600FE579D /* UIAlertController.swift */; };
+		E2C4EEFC28D25B6A005C6E2D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4EEFB28D25B6A005C6E2D /* Post.swift */; };
+		E2C4EEFE28D272F9005C6E2D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4EEFD28D272F9005C6E2D /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		E25327B028CCCE0C00FE579D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E25327B328CCCE0C00FE579D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E25327B528CCCE0C00FE579D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E25327BB28CCD3B900FE579D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E25327BB28CCD3B900FE579D /* Extension + PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PostViewController.swift"; sourceTree = "<group>"; };
 		E25327BD28CCD95500FE579D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		E25327BF28CCDD1600FE579D /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		E2C4EEFB28D25B6A005C6E2D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E2C4EEFD28D272F9005C6E2D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,9 @@
 				E25327A728CCCE0A00FE579D /* AppDelegate.swift */,
 				E25327A928CCCE0A00FE579D /* SceneDelegate.swift */,
 				E25327AB28CCCE0A00FE579D /* FeedViewController.swift */,
-				E25327BB28CCD3B900FE579D /* PostViewController.swift */,
+				E2C4EEFB28D25B6A005C6E2D /* Post.swift */,
+				E25327BB28CCD3B900FE579D /* Extension + PostViewController.swift */,
+				E2C4EEFD28D272F9005C6E2D /* PostViewController.swift */,
 				E25327BD28CCD95500FE579D /* InfoViewController.swift */,
 				E25327BF28CCDD1600FE579D /* UIAlertController.swift */,
 				E25327B028CCCE0C00FE579D /* Assets.xcassets */,
@@ -143,11 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C4EEFE28D272F9005C6E2D /* PostViewController.swift in Sources */,
 				E25327C028CCDD1600FE579D /* UIAlertController.swift in Sources */,
-				E25327BC28CCD3B900FE579D /* PostViewController.swift in Sources */,
+				E25327BC28CCD3B900FE579D /* Extension + PostViewController.swift in Sources */,
 				E25327AC28CCCE0A00FE579D /* FeedViewController.swift in Sources */,
 				E25327A828CCCE0A00FE579D /* AppDelegate.swift in Sources */,
 				E25327AA28CCCE0A00FE579D /* SceneDelegate.swift in Sources */,
+				E2C4EEFC28D25B6A005C6E2D /* Post.swift in Sources */,
 				E25327BE28CCD95500FE579D /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

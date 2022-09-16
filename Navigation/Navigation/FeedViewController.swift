@@ -7,17 +7,13 @@
 
 import UIKit
 
-struct Post {
-
-    var title: String
-}
 
 var titlePost = Post(title: "Hello world")
 
 class FeedViewController: UIViewController {
 
     private lazy var button: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
         button.backgroundColor = .systemRed
         button.addTarget(self, action: #selector(self.didTapButton), for: .touchUpInside)
         return button
@@ -33,7 +29,7 @@ class FeedViewController: UIViewController {
 
     @objc private func didTapButton() {
         let vc = PostViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
