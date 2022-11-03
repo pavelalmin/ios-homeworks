@@ -8,7 +8,7 @@
 import UIKit
 
 
-var titlePost = Post(title: "Hello world")
+var titlePost = Post(title: "БОРИСЫЧ ПРИВЕТ!")
 
 class FeedViewController: UIViewController {
 

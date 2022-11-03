@@ -10,7 +10,7 @@ import UIKit
 class PostViewController: UIViewController {
 
 
-    private let titleLabel: UILabel = {
+        let titleLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.text = "First Text"
         nameLabel.textColor = .black
@@ -25,7 +25,7 @@ class PostViewController: UIViewController {
 
     private func setupViews() {
 
-        view.backgroundColor = .white
+        view.backgroundColor = .green
 
         let audioRightButton = createCustomButton(
             imageName: "phone",
@@ -43,7 +43,7 @@ class PostViewController: UIViewController {
         view.addSubview(titleLabel)
 
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
