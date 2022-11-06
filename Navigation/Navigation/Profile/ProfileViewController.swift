@@ -15,36 +15,36 @@ class ProfileViewController: UIViewController {
         return headerView
     }()
 
+    private var profileButtonView: ProfileButtonView = {
+        let buttonView = ProfileButtonView()
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        return buttonView
+    }()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+        setupConstraints()
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.prefersLargeTitles = false
-
-        let appearance = UINavigationBarAppearance()
-        title = "Profile"
-        appearance.backgroundColor = .gray
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-   }
-
 
     func setupLayout() {
         self.view.backgroundColor = .lightGray
         view.addSubview(profileHeaderView)
+        view.addSubview(profileButtonView)
+    }
+
+
+    func setupConstraints() {
         NSLayoutConstraint.activate([
-            profileHeaderView.topAnchor.constraint(equalTo: view.topAnchor),
-            profileHeaderView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            profileHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            profileHeaderView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            profileHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            profileHeaderView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            profileHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            profileHeaderView.heightAnchor.constraint(equalToConstant: 220),
+
+            profileButtonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            profileButtonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            profileButtonView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }

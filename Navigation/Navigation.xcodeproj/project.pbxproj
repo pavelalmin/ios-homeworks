@@ -18,6 +18,7 @@
 		E25327BE28CCD95500FE579D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BD28CCD95500FE579D /* InfoViewController.swift */; };
 		E25327C028CCDD1600FE579D /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25327BF28CCDD1600FE579D /* UIAlertController.swift */; };
 		E28EE7772914223E00FCF05E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE7762914223E00FCF05E /* TabbarController.swift */; };
+		E2A1EC7D2917F18C00430B58 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1EC7C2917F18C00430B58 /* ProfileButtonView.swift */; };
 		E2C4EEFC28D25B6A005C6E2D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4EEFB28D25B6A005C6E2D /* Post.swift */; };
 		E2C4EEFE28D272F9005C6E2D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4EEFD28D272F9005C6E2D /* PostViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		E25327BD28CCD95500FE579D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		E25327BF28CCDD1600FE579D /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		E28EE7762914223E00FCF05E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		E2A1EC7C2917F18C00430B58 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		E2C4EEFB28D25B6A005C6E2D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E2C4EEFD28D272F9005C6E2D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E240FE1128D77EBF00ECA2D9 /* ProfileHeaderView.swift */,
+				E2A1EC7C2917F18C00430B58 /* ProfileButtonView.swift */,
 				E240FE1328D77F1000ECA2D9 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -176,6 +179,7 @@
 				E28EE7772914223E00FCF05E /* TabbarController.swift in Sources */,
 				E25327AA28CCCE0A00FE579D /* SceneDelegate.swift in Sources */,
 				E2C4EEFC28D25B6A005C6E2D /* Post.swift in Sources */,
+				E2A1EC7D2917F18C00430B58 /* ProfileButtonView.swift in Sources */,
 				E25327BE28CCD95500FE579D /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
