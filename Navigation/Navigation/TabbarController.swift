@@ -19,12 +19,12 @@ class TabbarController: UITabBarController {
 
     private func setupUI() {
         firstTabNavigationController = UINavigationController.init(rootViewController: ProfileViewController())
-        secondTabNavigationController = UINavigationController.init(rootViewController: FeedViewController())
+        secondTabNavigationController = UINavigationController.init(rootViewController: LogInViewController())
 
         self.viewControllers = [firstTabNavigationController, secondTabNavigationController]
 
         let item1 = UITabBarItem(title: "Home", image: UIImage(systemName: "folder"), tag: 0)
-        let item2 = UITabBarItem(title: "Error", image: UIImage(systemName: "folder.fill"), tag: 1)
+        let item2 = UITabBarItem(title: "Profile", image: UIImage(systemName: "folder.fill"), tag: 1)
 
         firstTabNavigationController.tabBarItem = item1
         secondTabNavigationController.tabBarItem = item2

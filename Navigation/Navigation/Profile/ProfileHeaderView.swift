@@ -27,7 +27,7 @@ final class ProfileHeaderView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Pavel Almin"
         label.tintColor = .black
-        label.textColor = .black
+        label.textColor = UIColor(named: "customColor")
         label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
@@ -37,7 +37,7 @@ final class ProfileHeaderView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Waiting for delivery"
         label.tintColor = .gray
-        label.textColor = .gray
+        label.textColor = UIColor(patternImage: UIImage(named: "blue_pixel")!)
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         return label
     }()
@@ -74,7 +74,8 @@ final class ProfileHeaderView: UIView {
     }
 
     @objc func tapOnShowStatusButton() {
-        print("\(String(describing: statusLabel.text))")
+//        print("\(String(describing: statusLabel.text))")
+        print("\(String(describing: statusLabel.text ?? "defaultValue"))")
     }
 
     override init(frame: CGRect) {
