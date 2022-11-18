@@ -91,17 +91,16 @@ class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemMint
+        self.view.backgroundColor = .white
         self.navigationController?.navigationBar.isHidden = true
         self.view.addSubview(self.scrollView)
         self.scrollView.addSubview(self.stackView)
         self.view.addSubview(self.iconImageView)
+        self.scrollView.addSubview(self.iconImageView)
         self.stackView.addArrangedSubview(self.loginTextField)
         self.stackView.addArrangedSubview(self.passwordTextField)
         self.stackView.addArrangedSubview(self.button)
         setupScrollViewConstraints()
-        setupIconConstraints()
-        setupStackViewConstraints()
         setupGestures()
     }
 
@@ -113,7 +112,7 @@ class LogInViewController: UIViewController {
 
     @objc func tapOnShowStatusButton() {
         let vc = ProfileViewController()
-        self.present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 
@@ -138,24 +137,15 @@ class LogInViewController: UIViewController {
             scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
             scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-        ])
-    }
+            scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
 
-    func setupIconConstraints() {
-        NSLayoutConstraint.activate([
             iconImageView.heightAnchor.constraint(equalToConstant: 100),
             iconImageView.widthAnchor.constraint(equalToConstant: 100),
-            iconImageView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 120),
-            iconImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-    }
+            iconImageView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -70),
+            iconImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
 
-    func setupStackViewConstraints() {
-        NSLayoutConstraint.activate([
             stackView.heightAnchor.constraint(equalToConstant: 150),
-            stackView.centerYAnchor.constraint(equalTo: self.scrollView.centerYAnchor, constant: 50),
-//            stackView.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 120),
+            stackView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor, constant: 60),
             stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16)
         ])
