@@ -96,7 +96,7 @@ class LogInViewController: UIViewController {
         self.view.addSubview(self.scrollView)
         self.scrollView.addSubview(self.stackView)
         self.view.addSubview(self.iconImageView)
-        self.scrollView.addSubview(self.iconImageView)
+//        self.scrollView.addSubview(self.iconImageView)
         self.stackView.addArrangedSubview(self.loginTextField)
         self.stackView.addArrangedSubview(self.passwordTextField)
         self.stackView.addArrangedSubview(self.button)
@@ -141,10 +141,12 @@ class LogInViewController: UIViewController {
 
             iconImageView.heightAnchor.constraint(equalToConstant: 100),
             iconImageView.widthAnchor.constraint(equalToConstant: 100),
+//            iconImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
             iconImageView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -70),
             iconImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
 
             stackView.heightAnchor.constraint(equalToConstant: 150),
+//            stackView.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 120),
             stackView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor, constant: 60),
             stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16)

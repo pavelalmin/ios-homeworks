@@ -18,8 +18,8 @@ class TabbarController: UITabBarController {
     }
 
     private func setupUI() {
-        firstTabNavigationController = UINavigationController.init(rootViewController: ProfileViewController())
-        secondTabNavigationController = UINavigationController.init(rootViewController: LogInViewController())
+        firstTabNavigationController = UINavigationController.init(rootViewController: LogInViewController())
+        secondTabNavigationController = UINavigationController.init(rootViewController: PostViewController())
 
         self.viewControllers = [firstTabNavigationController, secondTabNavigationController]
 
