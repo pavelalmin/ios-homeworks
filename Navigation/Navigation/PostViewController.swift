@@ -33,7 +33,7 @@ class PostViewController: UIViewController {
         )
 
         navigationItem.rightBarButtonItem = audioRightButton
-        titleLabel.text = titlePost.title
+        titleLabel.text = "OMG"
 
         setConstraints()
     }
